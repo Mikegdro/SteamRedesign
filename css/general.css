@@ -1259,11 +1259,23 @@ nav {
 }
 
 /* ======================== SINGLE ==========================0*/
-.hero {
+
+
+.heroSingle {
   width: 100%;
 
   box-sizing: border-box;
   padding-top: 220px;
+
+  background-image: url("../src/fondordr.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  /* height: 100vh; */
+
+  position: relative;
 }
 
 .container {
@@ -1424,6 +1436,21 @@ nav {
   overflow: hidden;
 }
 
+.reviews {
+  font-size: var(--xxs);
+  text-align: left !important;
+}
+
+.remarcado {
+  color: rgb(0, 140, 255);
+  transition: all .2s ease-in-out;
+}
+
+.remarcado:hover {
+  cursor: pointer;
+  color: rgba(0, 140, 255, .7);
+}
+
 /*  ================== Media Queries ====================== */
 @media screen and (max-width: 1000px) {
   .hiddenMenu {
@@ -1522,7 +1549,8 @@ nav {
   .gameInfo .header {
     padding-bottom: 25%;
     flex: 2;
-    background-position: center right;
+    background-position: center center;
+    background-size: contain;
   }
 
   .gameInfo .about {
@@ -1564,6 +1592,15 @@ nav {
 
   .form input[type="text"] { 
     width: 55%;
+  }
+
+  .gameContainer .gameInfo {
+    width: 100%;
+
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 0;
   }
 
 }
