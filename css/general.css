@@ -1303,7 +1303,7 @@ nav {
 }
 
 .container {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
 
     position: relative;
@@ -1361,7 +1361,7 @@ nav {
 .gameContainer {
     display: flex;
     margin-top: 15px;
-    gap: 5px;
+    gap: 15px;
 }
 
 .gameContainer .gallery {
@@ -1487,7 +1487,27 @@ nav {
   text-align: center;
 }
 
+.descripcion {
+    margin-top: 15px;
+    padding: 2em 1em;
+
+    color: white;
+
+    font-size: var(--s);
+    font-weight: 200;
+    font-family: var(--fuentePrimaria);
+
+    background-color: #25252556;
+    
+}
+
 /*  ================== Media Queries ====================== */
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .hiddenMenu {
         padding-top: 135px;
