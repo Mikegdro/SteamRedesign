@@ -77,13 +77,13 @@ function loadSnow() {
 }
 
 function loadSliders() {
-
-    let slides = 2;
     
-    if (visualViewport.width < 600 ) {
+    let slides = 2;
+
+    if (visualViewport.width < 900 ) {
         slides = 1;
-    } else if (visualViewport.width > 1000) {
-        slides = 3;
+    } else if (visualViewport.width > 1400) {
+        slides = 4;
     }
 
     var swiper1 = new Swiper(".mySwiper", {
@@ -113,6 +113,16 @@ function loadSliders() {
         pagination: {
         el: ".swiper-pagination",
         },
+    });
+
+    window.addEventListener('resize', event => {
+        if(window.visualViewport.width < 900) {
+            swiper1.params.slidesPerView = 1;
+        } else if(window.visualViewport.width > 1400) {
+            swiper1.params.slidesPerView = 4;
+        } else {
+            swiper1.params.slidesPerView = 2;
+        }
     });
 }
 

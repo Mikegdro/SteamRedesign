@@ -299,12 +299,12 @@ nav {
 
     position: absolute;
 
-    top: 110%;
+    top: 120%;
     left: 10%;
 
     max-width: 0;
     width: 80%;
-    height: 1px;
+    height: .5px;
 
     background-color: #fff;
 
@@ -523,6 +523,8 @@ nav {
     align-items: center;
 
     height: 300px;
+
+    cursor: grab;
 }
 
 .hover {
@@ -554,7 +556,7 @@ nav {
     transition: opacity 500ms;
 }
 
-.hover:hover:not(.franquicia) {
+.hover:hover:not(.franquicia, .swiper-slide) {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -917,7 +919,8 @@ nav {
     left: 0;
     top: 0;
 
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     background-color: #3d3d3d55;
 }
 
