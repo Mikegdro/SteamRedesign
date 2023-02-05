@@ -1,5 +1,16 @@
 window.onload = function () {
     loadSliders();
+    toggleDescription();
+}
+
+function toggleDescription () {
+    let button = document.getElementById('descButton');
+    let descripcion = document.querySelector('.descripcion');
+
+    button.addEventListener('click', (event) => {
+        descripcion.classList.toggle('active');
+        button.classList.toggle('active');
+    });
 }
 
 function loadSliders() {
