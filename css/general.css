@@ -1373,10 +1373,8 @@ nav {
 }
 
 .pegi {    
-    padding-bottom: 15%;
-    width: 100px;
-
-    
+    height: 150px;
+    width: 120px;
 
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/PEGI_18.svg/425px-PEGI_18.svg.png');
     background-position: center center;
@@ -1542,13 +1540,19 @@ nav {
     justify-content: space-evenly;
 
     gap: 25px;
-    width: 80%;
+    width: 90%;
 
     align-self: center;
+
+    padding: 15px 0;
+}
+
+.info .shop .boton {
+    padding: 15px 0;
 }
 
 .info .shop .bi-cart2 {
-    flex: 1;
+    flex: 2;
 }
 
 .info .shop .compra {

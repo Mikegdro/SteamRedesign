@@ -1,7 +1,10 @@
+
 window.onload = function () {
     loadSliders();
     toggleDescription();
-    readJson();
+
+    let params = getParamaters();
+    getGame();
 }
 
 function toggleDescription () {
@@ -45,6 +48,58 @@ function loadSliders() {
   });
 }
 
-function readJson() {
+
+//Futura implementación
+function getParamaters() {
     
+    let params = window.location.search;
+
+    if(params.length){
+        params = params.split("?");
+        params = params[1];
+    }
+
+    return params;
 }
+
+function getGame() {
+    let games = {
+        dayz: {
+
+        },
+        rust: {
+
+        },
+        rdr2: {
+
+        },
+        northgard: {
+
+        },
+        onepiece: {
+
+        },
+        hogwarts: {
+
+        },
+        thedivision: {
+
+        },
+        lostark: {
+
+        },
+        civilization: {
+
+        },
+        destiny: {
+
+        },
+        eso: {
+
+        },
+        endwalker: {
+            
+        }
+    }
+}
+
