@@ -1,6 +1,7 @@
 window.onload = function () {
     loadSliders();
     toggleDescription();
+    readJson();
 }
 
 function toggleDescription () {
@@ -42,4 +43,8 @@ function loadSliders() {
           swiper.params.slidesPerView = 4;
       }
   });
+}
+
+function readJson() {
+    
 }
